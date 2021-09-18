@@ -50,3 +50,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/olive/olive-vendor.mk)
+
+# MOD: MiuiCamera
+ifneq ($(wildcard vendor/miuicamera),)
+$(call inherit-product, vendor/miuicamera/config.mk)
+PRODUCT_COPY_FILES += \
+    vendor/miuicamera/common/proprietary/etc/device_features/olive.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/olive.xml
+endif
