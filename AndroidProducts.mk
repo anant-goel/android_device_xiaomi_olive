@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_olive.mk
+    $(LOCAL_DIR)/corvus_olive.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_olive-user \
-    lineage_olive-userdebug \
-    lineage_olive-eng
+    corvus_olive-user \
+    corvus_olive-userdebug \
+    corvus_olive-eng
